@@ -1,0 +1,28 @@
+חיבור ל git hub
+
+git clone https://github.com/Ariel20023/test_week_11.git
+
+
+בידקת minikube
+
+(venv) PS C:\Users\ariel\kodkod\tests\test_week_11> minikube status
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+
+
+יציאה לבראנץ חדש בשביל dockerfile
+git checkout -b dockerfile
+
+בנית image
+docker build -t test11:v1 .
+
+הרצת דוקר
+docker run --name ariel -d test11:v1
+docker run --name ariel -p 8000:8000 -d test11:v1
+
+בניה ועליה לגיטהב(במקום בפקודה הקודמת)
+docker buildx build -t arielizralevitch/test11 --push .
