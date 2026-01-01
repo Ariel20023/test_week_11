@@ -39,9 +39,6 @@ service/streamlit created
 NAME        READY   STATUS    RESTARTS   AGE
 streamlit   1/1     Running   0          3s
 
-
-
-
 כדי להריץ את ה minikube
  minikube service streamlit
 
