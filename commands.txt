@@ -28,6 +28,22 @@ docker run --name ariel -p 8000:8000 -d test11:v1
 docker buildx build -t arielizralevitch/test11 --push .
 
 
+פקודות כדי להרים את ה pod ואת ה service
+(venv) PS C:\Users\ariel\kodkod\tests\test_week_11> kubectl apply -f .
+pod/streamlit created
+service/streamlit created
+
+
+מראה שזה רץ ה pod
+(venv) PS C:\Users\ariel\kodkod\tests\test_week_11> kubectl get pods
+NAME        READY   STATUS    RESTARTS   AGE
+streamlit   1/1     Running   0          3s
+
+
+
+
+כדי להריץ את ה minikube
+ minikube service streamlit
 
 
 
